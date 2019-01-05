@@ -137,6 +137,7 @@ logging.debug("真正实现：")
 放在Local Storage的还有登录返回的用户信息user和_lr_id_（userID）（这个不知道是不是取自user里的id生成的）
 """
 
+
 def login(login_url, the_account_info, the_headers):
     """
 
@@ -192,8 +193,8 @@ logging.debug(token)
 
 # 拿到token请求其他url
 if token != '' and token is not None:
-    # profile_settings_url = "https://backend.gamivo.com/api/profile/settings"
-    profile_settings_url = "https://backend.gamivo.com/api/profile/me"                                                                                                                                                                                                                                        seller
+    # profile_settings_url = 'https://backend.gamivo.com/api/profile/settings'
+    profile_settings_url = 'https://backend.gamivo.com/api/profile/me'
 
     # 通过在请求头传递x-gamivo-auth
     # headers['x-gamivo-auth'] = token
